@@ -1,0 +1,104 @@
+.logo {
+	position: fixed;
+	left: 46.56%;
+	right: 46.56%;
+	top: 1.39%;
+	bottom: 93.06%;
+
+	font-family: colombo, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 33px;
+	line-height: 40px;
+	/* identical to box height */
+
+	color: #FFFFFF;
+
+	text-align: center;
+
+	mix-blend-mode: normal;
+}
+
+.wishlist {
+	position: fixed;
+	left: 85.39%;
+	right: 5.47%;
+	top: 1.67%;
+	bottom: 93.33%;
+
+	font-family: poppins;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 24px;
+	line-height: 36px;
+	/* identical to box height */
+
+	text-align: right;
+
+	color: #FFFFFF;
+}
+
+.icon {
+	position: fixed;
+	left: 96.09%;
+	right: 1.56%;
+	top: 4.5%;
+	bottom: 93.75%;
+
+	background: #C4C4C4;
+
+	width: 30px;
+	height: 30px;
+	background-image: url('/assets/images/placeholder.jpg');
+	background-size: cover;
+
+	border-radius: 15px;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+header {
+	position: fixed;
+	left: 1.56%;
+	right: 96.09%;
+	top: 2.78%;
+	bottom: 94.44%;
+
+
+	background: #000000;
+	color: #FFFFFF;
+	
+	font-size: 14px;
+	font-weight: bold;
+	display: flex;
+	justify-content: space-between;
+	.menu-button {
+		margin-right: 24px;
+		min-width: 0;
+		padding: 0;
+		line-height: normal;
+	}
+	.app-title {
+		padding: 0 3px;
+	}
+}
+.sidenav-container {
+    flex: 1;
+    .sidenav {
+        min-width: 240px;
+        a {
+            display: block;
+            padding: 6px 24px;
+            width: 100%;
+			text-align: left;
+			
+        }
+    }
+    main {
+		height: 100%;
+		width: 100%;
+
+    }
+}

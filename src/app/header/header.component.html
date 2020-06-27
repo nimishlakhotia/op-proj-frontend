@@ -1,0 +1,30 @@
+<header>
+	<div>
+
+	<button mat-button class="menu-button" (click)="sidenav.toggle()">
+		<mat-icon>{{isMenuOpen ? 'close' : 'menu'}}</mat-icon>
+	</button>
+
+	</div>
+
+	<mat-sidenav-container class="sidenav-container"  [style.marginTop.px]="0">
+	<mat-sidenav #sidenav autoFocus="false" mode="over" [(opened)]="isMenuOpen" [fixedTopGap]="0" [fixedBottomGap]="0" class="sidenav">
+		<a href="/core">Core</a>
+		<a href="/it">IT</a>
+		<a href="/consulting">Consulting</a>
+		<a href="/entrepeneurship">Entrepeneurship</a>
+		<a href="/finance">Finance</a>
+		<a href="/socdevpolicy">SocDev & Policy</a>
+		<a href="/aboutus">ABOUT US</a>
+	</mat-sidenav>
+	<mat-sidenav-content>
+		<main>
+		</main>
+	</mat-sidenav-content>
+</mat-sidenav-container>
+
+<h1 class="logo">{{logo}}</h1>
+<p class="wishlist">{{wishlist}}</p>
+<img class="icon">
+
+</header>

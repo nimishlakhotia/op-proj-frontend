@@ -1,0 +1,147 @@
+@font-face {
+	font-family: colombo;
+	src: url("/assets/fonts/Colombo.otf") format("opentype");
+}
+
+@font-face {
+	font-family: poppins;
+	src: url("/assets/fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+body {
+	background-color: black;
+}
+
+.main_title {
+	position: absolute;
+	width: 805px;
+	height: 432px;
+	left: 60px;
+	top: 228px;
+
+	font-family: colombo, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 120px;
+	line-height: 144px;
+	display: flex;
+	align-items: flex-end;
+
+	color: #FFFFFF;
+
+
+	mix-blend-mode: normal;
+}
+
+.login {
+	position: absolute;
+	width: 343px;
+	height: 29px;
+	right: 4.69%;
+	top: 12%;
+
+	font-family: colombo;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 29px;
+	/* identical to box height */
+
+	text-align: right;
+
+	color: #FFFFFF;
+}
+
+.ldap {
+	position: absolute;
+	width: 352px;
+	height: 30px;
+	right: 4.45%;
+	top: 20%;
+
+	background: #FFFFFF;
+	border-radius: 65px;
+}
+
+.password {
+	position: absolute;
+	width: 352px;
+	height: 30px;
+	right: 4.45%;
+	top: 25%;
+
+	background: #FFFFFF;
+	border-radius: 65px;
+}
+
+.remember {
+	position: absolute;
+	width: 14px;
+	height: 14px;
+	right: 22.45%;
+	top: 30%;
+
+	background: #C4C4C4;
+}
+
+.remember-label {
+	position: absolute;
+	width: 103px;
+	height: 21px;
+	right: 16.45%;
+	top: 30%;
+
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 21px;
+	/* identical to box height */
+
+	display: flex;
+	align-items: flex-end;
+
+	color: #FFFFFF;
+}
+
+.signin {
+	position: absolute;
+	width: 82px;
+	height: 36px;
+	right: 4.45%;
+	top: 29.4%;
+
+	font-family: poppins;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 36px;
+	/* identical to box height */
+
+
+	color: #FFFFFF;
+	background: none;
+	padding: 0;
+	border: none;
+}
+
+.logo_login {
+	position: absolute;
+	left: 4.69%;
+	right: 88.44%;
+	top: 12.5%;
+	bottom: 81.94%;
+
+	font-family: colombo;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 33px;
+	line-height: 40px;
+	/* identical to box height */
+
+	text-align: center;
+
+	color: #FFFFFF;
+
+	mix-blend-mode: normal;
+}

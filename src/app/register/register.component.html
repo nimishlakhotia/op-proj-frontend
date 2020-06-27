@@ -1,0 +1,35 @@
+<img class="reg-icon">
+
+<p class="first-name-label">First Name</p>
+<p class="last-name-label">Last Name</p>
+<p class="college-label">College</p>
+<p class="year-label">Year</p>
+<p class="branch-label">Branch</p>
+<p class="about-label">About</p>
+<p class="domain-label">Domain Interests</p>
+
+<p class="first-name">{{first_name}}</p>
+<p class="last-name">{{last_name}}</p>
+<p class="college">{{college}}</p>
+<p class="year">{{year}}</p>
+<p class="branch">{{branch}}</p>
+<p class="about">{{about}}"</p>
+<p class="email">{{email}}</p>
+
+<p class="domain">
+	<mat-button-toggle-group name="domain-choice" aria-label="Domain Choice">
+		<mat-button-toggle class="core" value="Core">Core</mat-button-toggle>
+		<mat-button-toggle class="it" value="IT">IT/Coding</mat-button-toggle>
+		<mat-button-toggle class="consulting" value="consulting">Consulting</mat-button-toggle>
+		<mat-button-toggle class="ent" value="ent">Entrepeneurship</mat-button-toggle>
+		<mat-button-toggle class="finance" value="finance">Finance</mat-button-toggle>
+		<mat-button-toggle class="socdev" value="socdev">SocDev & Policy</mat-button-toggle>
+	</mat-button-toggle-group>
+</p>
+
+<p class="ops-label">Opportunities Pursued</p>
+<p class="ops">{{ops}}</p>
+
+<form action="\">
+	<input class="save" type="submit" value="Save">
+</form>
