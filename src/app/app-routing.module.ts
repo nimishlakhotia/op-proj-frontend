@@ -12,8 +12,8 @@ const routes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
-  { path: '', component: HeaderComponent, outlet: 'header-route'},
-  { path: 'login', component: NoheaderComponent, outlet: 'header-route' },
+  { path: '', pathMatch: 'full', component: HeaderComponent, outlet: 'header-route'},
+  { path: 'login', pathMatch:'full', component: NoheaderComponent, outlet: 'header-route' },
   { path: '**', redirectTo: ''},
 ];
 

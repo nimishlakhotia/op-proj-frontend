@@ -321,6 +321,11 @@ mat-button-toggle {
 
 }
 
+mat-button-toggle:hover {
+    background-color: #FFFFFF !important;
+	color: #363636 !important;
+}
+
 .mat-button-toggle-label-content {
     font-family: poppins;
 	font-style: normal;
