@@ -296,6 +296,44 @@ body {
 	top: 395px;
 }
 
+mat-button-toggle-group {
+	box-shadow: none !important;
+	border-style: none !important;
+}
+
+mat-button-toggle {
+
+	border: 2px solid #FFFFFF !important;
+    background-color: #363636 !important;
+
+	height: 33px;
+	box-sizing: border-box;
+	border-radius: 13px;
+
+	margin-left: 20px;
+    margin-right:20px;
+
+	display: flex;
+	align-items: center;
+	text-align: center;
+	
+	color: #FFFFFF !important;
+
+}
+
+.mat-button-toggle-label-content {
+    font-family: poppins;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 27px;
+}
+
+.mat-button-toggle-checked {
+	background-color: #FFFFFF !important;
+	color: #363636 !important;
+}
+
 .ops-label {
 	position: absolute;
 	width: 184px;
