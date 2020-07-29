@@ -1,3 +1,33 @@
+<!--<router-outlet name='header-route'></router-outlet>-->
 
-<router-outlet name='header-route'></router-outlet>
-<router-outlet></router-outlet>
+<mat-sidenav-container>
+
+	<mat-sidenav #sidenav [(opened)]="isMenuOpen">
+		<button mat-button class="menu-button" (click)="sidenav.toggle()">
+			<mat-icon>{{isMenuOpen ? 'close' : 'menu'}}</mat-icon>
+			<div class="sidelinks">
+				<p class="corelink"><a routerLink="search/core">Core</a></p>
+				<p class="corelink"><a routerLink="search/information technology">IT</a></p>
+				<p class="corelink"><a routerLink="search/consulting">Consulting</a></p>
+				<p class="corelink"><a routerLink="search/entrepreneurship">Entrepreneurship</a></p>
+				<p class="corelink"><a routerLink="search/finance">Finance</a></p>
+				<p class="corelink"><a routerLink="search/socdev & policy">SocDev & Policy</a></p>
+			</div>
+		</button>
+	</mat-sidenav>
+
+	<mat-sidenav-content  [ngClass]="getContentClass()">
+
+		<mat-toolbar color="primary" *ngIf="showHeader()" [ngClass]="getHeaderClass()">
+			<button mat-button class="menu-button" (click)="sidenav.toggle()">
+				<mat-icon>{{isMenuOpen ? 'close' : 'menu'}}</mat-icon>
+			</button>
+			<p class="logo">{{logo}}</p>
+			<p class="wishlist">{{wishlist}}</p>
+		</mat-toolbar>
+
+		<router-outlet></router-outlet>
+
+	</mat-sidenav-content>
+
+</mat-sidenav-container>

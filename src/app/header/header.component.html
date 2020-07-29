@@ -1,4 +1,4 @@
-<header>
+<!--<header>
 	<div>
 
 	<button mat-button class="menu-button" (click)="sidenav.toggle()">
@@ -28,3 +28,16 @@
 <img class="icon">
 
 </header>
+-->
+<mat-sidenav-container>
+	<mat-sidenav #sidenav [(opened)]="isMenuOpen">
+		<button mat-button class="menu-button" (click)="sidenav.toggle()">
+			<mat-icon>{{isMenuOpen ? 'close' : 'menu'}}</mat-icon>
+		</button>
+	</mat-sidenav>
+	<mat-sidenav-content>
+		<button mat-button class="menu-button" (click)="sidenav.toggle()">
+			<mat-icon>{{isMenuOpen ? 'close' : 'menu'}}</mat-icon>
+		</button>
+	</mat-sidenav-content>
+</mat-sidenav-container>

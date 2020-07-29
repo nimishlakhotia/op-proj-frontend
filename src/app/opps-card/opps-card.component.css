@@ -1,0 +1,111 @@
+@font-face {
+	font-family: colombo;
+	src: url("/assets/fonts/Colombo.otf") format("opentype");
+}
+
+@font-face {
+	font-family: poppins;
+	src: url("/assets/fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+.opps-card {
+	position: relative;
+	width: 275px;
+	height: 200px;
+
+	/* Card Shadow */
+
+	box-shadow: 0px 8px 12px rgba(18, 18, 18, 0.4);
+	border-radius: 15px;
+
+	padding: 10px;
+	display: inline-block;
+	margin: 30px 30px;
+
+	background-color: white;
+
+}
+
+.opps-type {
+	height: 19px;
+
+	border-radius: 37px;
+	padding-left: 5px;
+	padding-right: 5px;
+
+	font-family: poppins;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 14px;
+	line-height: 21px;
+	display: inline-block;
+
+	color: white;
+
+	/* B1 */
+
+}
+
+.opps-name {
+	width: 204px;
+
+	font-family: poppins;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 105%;
+	word-wrap: break-word;
+	/* or 25px */
+
+
+	color: #FFFFFF;
+}
+
+.opps-org {
+
+	font-family: poppins;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 105%;
+	/* or 15px */
+
+
+	color: #FFFFFF;
+}
+
+.opps-location {
+	position: absolute;
+	bottom: 0px;
+	width: 70%;
+
+	font-family: poppins;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 105%;
+	/* identical to box height, or 17px */
+
+	white-space: pre-line;
+
+	color: #FFFFFF;
+
+}
+
+.opps-duration {
+	position: absolute;
+	right: 10px;
+	bottom: 0px;
+
+	font-family: poppins;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 105%;
+	/* identical to box height, or 17px */
+
+	text-align: right;
+
+	color: #FFFFFF;
+
+}

@@ -1,0 +1,17 @@
+<div class="opps-card">
+	<p class="opps-type" [style.background-color]="getMainColor()">
+		{{opportunity.Type}}
+	</p>
+	<p class="opps-name" [style.color]="getMainColor()">
+		{{opportunity.Name_of_Program}}
+	</p>
+	<p class="opps-org" [style.color]="getMainColor()">
+		{{opportunity.Organiser}}
+	</p>
+	<p class="opps-location" [style.color]="getMainColor()">
+		{{opportunity.Location}}
+	</p>
+	<p class="opps-duration" [style.color]="getMainColor()">
+		{{opportunity.Deadline || ''}}
+	</p>
+</div>

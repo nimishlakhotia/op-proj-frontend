@@ -1,0 +1,21 @@
+<img class="reg-icon">
+
+<p class="about-label">About</p>
+
+<p class="name">{{user?.name}}</p>
+<p class="college">{{user?.college}}</p>
+<p class="year-branch">{{user?.yearOfStudy}} | {{user?.branch}}</p>
+<p class="email">{{user?.email}}</p>
+
+<p class="about">{{user?.bio}}</p>
+
+<p class="ops-label">Opportunities Pursued</p>
+<p class="ops">{{ops}}</p>
+
+<div class="wishlist-container">
+	<p class="wishlist-label">Wishlist</p>
+	<app-opps-wishlist></app-opps-wishlist>
+	<p (click)="logout()" class="logout" >Logout</p>
+</div>
+
+<input class="edit" type="submit" value="Edit Profile" (click)="onClick()">

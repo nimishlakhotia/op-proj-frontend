@@ -1,0 +1,161 @@
+@font-face {
+	font-family: colombo;
+	src: url("/assets/fonts/Colombo.otf") format("opentype");
+}
+
+@font-face {
+	font-family: poppins;
+	src: url("/assets/fonts/Poppins-Regular.ttf") format("truetype");
+}
+
+.domain-container {
+	position: relative;
+}
+
+.domain {
+
+	font-family: colombo;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 64px;
+	line-height: 105%;
+	/* or 67px */
+
+	text-align: center;
+
+	/* B1 */
+}
+
+.search-container {
+	position: absolute;
+	width: 1190px;
+	height: 40px;
+	left: 350px;
+	top: 152px;
+
+	border-radius: 62px;
+
+	background-color: white;
+}
+
+.search {
+	position: absolute;
+	left: 4.2%;
+	top: 5%;
+	bottom: 1%;
+
+	width: 60%;
+
+	border-style: none;
+
+	font-family: Poppins;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 36px;
+	/* identical to box height */
+
+	display: flex;
+	align-items: center;
+
+	background-color: transparent;
+	
+}
+
+.search-icon {
+	position: absolute;
+	left: 1.26%;
+	right: 97.06%;
+	top: 15%;
+	bottom: 25%;
+
+}
+
+.search-choice {
+	display: flex;
+	flex-direction: column;
+	padding: 0px 0px;
+
+	position: absolute;
+	right: 1%;
+	top: 13%;
+}
+
+mat-button-toggle-group {
+	box-shadow: none !important;
+	border-style: none !important;
+}
+
+mat-button-toggle {
+
+	border-style: none !important;
+
+	height: 26px;
+	box-sizing: border-box;
+	border-radius: 39px;
+
+	margin-left: 3px;
+    margin-right:3px;
+
+	display: flex;
+	align-items: center;
+	text-align: center;
+
+	color: white;
+
+}
+
+mat-button-toggle.core {
+	background-color: #05905F !important;
+}
+
+.mat-button-toggle-label-content {
+    font-family: poppins;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 14px;
+	line-height: 21px;
+	/* identical to box height */
+
+	text-align: center;
+}
+
+.core.mat-button-toggle-checked {
+	background-color: #05905F !important;
+	color: #FFFFFF !important;
+}
+
+.information.mat-button-toggle-checked {
+	background-color: #FFA954 !important;
+	color: #FFFFFF !important;
+}
+
+.consulting.mat-button-toggle-checked {
+	background-color: #E76D50 !important;
+	color: #FFFFFF !important;
+}
+
+.entrepreneurship.mat-button-toggle-checked {
+	background-color: #225882 !important;
+	color: #FFFFFF !important;
+}
+
+.finance.mat-button-toggle-checked {
+	background-color: #9562A5 !important;
+	color: #FFFFFF !important;
+}
+
+.socdev.mat-button-toggle-checked {
+	background-color: #44A7C1 !important;
+	color: #FFFFFF !important;
+}
+
+.opps-list {
+	position: absolute;
+	left: 45px;
+	top: 247px;
+
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}

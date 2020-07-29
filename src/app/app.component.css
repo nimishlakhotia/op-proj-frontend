@@ -6,4 +6,180 @@
 @font-face {
 	font-family: poppins;
 	src: url("/assets/fonts/Poppins-Regular.ttf") format("truetype");
+
+}
+
+.sidelinks {
+	position: absolute;
+	width: 325px;
+	height: 480px;
+	left: 63px;
+	top: 150px;
+
+	font-family: poppins;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 54px;
+	text-align: right;
+
+
+}
+
+a {
+	color: #FFFFFF !important;
+}
+
+mat-sidenav-container {
+	height: 100%;
+}
+
+mat-sidenav-content.black{
+	background-color: black !important;
+}
+
+mat-sidenav-content.white{
+	background-color: white !important;
+}
+
+mat-sidenav-content.grey{
+	background-color: #363636 !important;
+}
+
+mat-sidenav-content.core{
+	background-color: #D4E9E2 !important;
+}
+
+mat-sidenav-content.infotech{
+	background-color: #FAECDE !important;
+}
+
+mat-sidenav-content.consulting{
+	background-color: #FBE9E5 !important;
+}
+
+mat-sidenav-content.entrepreneurship{
+	background-color: #D9E1E7 !important;
+}
+
+mat-sidenav-content.finance{
+	background-color: #F1E4ED !important;
+}
+
+mat-sidenav-content.socdev{
+	background-color: #DAEDF2 !important;
+}
+mat-sidenav {
+	background: rgba(37, 37, 37, 0.85) !important;
+	width: 417px !important;
+	mix-blend-mode: normal !important;
+	backdrop-filter: blur(20px) !important;
+}
+
+.menu-button {
+	position: absolute;
+	left: 1px;
+	top: 1px;
+}
+
+mat-toolbar {
+	width: 1280px;
+	height: 60px;
+	left: 0px;
+	top: 0px;
+
+}
+
+mat-toolbar.black {
+	background-color: black !important;
+}
+
+mat-toolbar.core {
+	background-color: white !important;
+}
+
+mat-toolbar.infotech {
+	background-color: white !important;
+	color: #FFA954 !important;
+}
+
+mat-toolbar.consulting {
+	background-color: white !important;
+	color: #E76D50 !important;
+}
+
+mat-toolbar.entrepreneurship {
+	background-color: white !important;
+	color: #225882 !important;
+}
+
+mat-toolbar.finance {
+	background-color: white !important;
+	color: #9562A5 !important;
+}
+
+mat-toolbar.socdev{
+	background-color: white !important;
+	color: #44A7C1 !important;
+
+}
+
+.logo {
+	position: absolute;
+	left: 46.56%;
+	right: 46.56%;
+	top: 1.39%;
+	bottom: 93.06%;
+
+	font-family: colombo, sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 33px;
+	line-height: 40px;
+
+	text-align: center;
+
+	mix-blend-mode: normal;
+}
+
+.core>.logo, .core>.wishlist, .core>.menu-button {
+	color: #05905F;
+}
+
+.infotech>.logo, .infotech>.wishlist, .infotech>.menu-button {
+	color: #FFA954;
+}
+.consulting>.logo, .consulting>.wishlist, .consulting>.menu-button {
+	color: #E76D50;
+}
+
+.entrepreneurship>.logo, .entrepreneurship>.wishlist, .entrepreneurship>.menu-button {
+	color: #225882;
+}
+
+.finance>.logo>, .finance>.wishlist, .finance>.menu-button {
+	color: #9562A5;
+}
+
+.socdev>.logo, .socdev>.wishlist, .socdev>.menu-button{
+	color: #44A7C1;
+}
+
+
+.wishlist {
+	position: absolute;
+	left: 85.39%;
+	right: 5.47%;
+	top: 1.67%;
+	bottom: 93.33%;
+
+	font-family: poppins;
+	font-style: normal;
+	font-weight: 900;
+	font-size: 24px;
+	line-height: 36px;
+
+	text-align: right;
+
+	color: #FFFFFF;
 }

@@ -1,20 +1,11 @@
 <img class="reg-icon">
 
 <p class="first-name-label">First Name</p>
-<p class="last-name-label">Last Name</p>
 <p class="college-label">College</p>
 <p class="year-label">Year</p>
 <p class="branch-label">Branch</p>
 <p class="about-label">About</p>
 <p class="domain-label">Domain Interests</p>
-
-<p class="first-name">{{first_name}}</p>
-<p class="last-name">{{last_name}}</p>
-<p class="college">{{college}}</p>
-<p class="year">{{year}}</p>
-<p class="branch">{{branch}}</p>
-<p class="about">{{about}}"</p>
-<p class="email">{{email}}</p>
 
 <p class="domain">
 	<mat-button-toggle-group name="domain-choice" aria-label="Domain Choice">
@@ -30,6 +21,15 @@
 <p class="ops-label">Opportunities Pursued</p>
 <p class="ops">{{ops}}</p>
 
-<form action="\">
+<form #myform="ngForm" (ngSubmit)="onSubmit(myform)">
+	<div class="form-field">
+		<input type="text" id="name" name="name" class="form-input name" [ngModel]="user?.name" ngModel required>
+	</div>
+	
+	<input type="text" id="college" name="college" class="college" [ngModel]="user?.college" ngModel required>
+	<input type="text" id="year" name="year" class="year" [ngModel]="user?.yearOfStudy" ngModel required>
+	<input type="text" id="branch" name="branch" class="branch" [ngModel]="user?.branch" ngModel required>
+	<input type="text" id="about" name="bio" class="about" [ngModel]="user?.bio" ngModel required>
+	<p class="email">{{user?.email}}</p>
 	<input class="save" type="submit" value="Save">
 </form>

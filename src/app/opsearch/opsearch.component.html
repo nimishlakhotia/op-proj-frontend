@@ -1,0 +1,19 @@
+<div class="domain-container">
+	<p class="domain" [style.color]="getMainColor()">{{domain}}</p>
+</div>
+<form #searchForm="ngForm">
+	<div class="search-container" [style.border-color]="getMainColor()">
+		<mat-icon class="search-icon" [style.color]="getMainColor()">search</mat-icon>
+		<input (keyup.enter)="search(searchForm)" class="search" type="text" id="searchstring" name="searchstring" placeholder="Search" [style.color]="getMainColor()" [ngModel]="searchstring" ngModel required>
+		<div class="search-choice">
+			<mat-button-toggle-group name="search-choice" aria-label="Search Choice">
+				<mat-button-toggle id="opps" [ngClass]="getDomain()" value="Opps">Opps</mat-button-toggle>
+				<mat-button-toggle id= "people" [ngClass]="getDomain()" value="People">People</mat-button-toggle>
+			</mat-button-toggle-group>
+		</div>
+	</div>
+</form>
+
+	<div class="opps-list">
+		<app-opps-card *ngFor="let opportunity of opportunity_list" [opps]="opportunity"></app-opps-card>
+	</div>
