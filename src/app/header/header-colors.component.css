@@ -1,0 +1,7 @@
+.mat-default {
+	background-color: black;
+}
+
+.menu-button.mat-default, .logo.mat-default, .wishlist.mat-default {
+	color: white;
+}

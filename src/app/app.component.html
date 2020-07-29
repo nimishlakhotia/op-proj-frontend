@@ -3,9 +3,14 @@
 <mat-sidenav-container>
 
 	<mat-sidenav #sidenav [(opened)]="isMenuOpen">
-		<button mat-button class="menu-button" (click)="sidenav.toggle()">
+		<div class="sidenav-button-container">
+			<button mat-button disableRipple class="menu-button" (click)="sidenav.toggle()">
+				<mat-icon>{{'close'}}</mat-icon>
+			</button>
+		</div>
+		<!--<button mat-button disableRipple class="menu-button" (click)="sidenav.toggle()">
 			<mat-icon>{{isMenuOpen ? 'close' : 'menu'}}</mat-icon>
-			<div class="sidelinks">
+			<!--<div class="sidelinks">
 				<p class="corelink"><a routerLink="search/core">Core</a></p>
 				<p class="corelink"><a routerLink="search/information technology">IT</a></p>
 				<p class="corelink"><a routerLink="search/consulting">Consulting</a></p>
@@ -13,20 +18,14 @@
 				<p class="corelink"><a routerLink="search/finance">Finance</a></p>
 				<p class="corelink"><a routerLink="search/socdev & policy">SocDev & Policy</a></p>
 			</div>
-		</button>
+		</button>-->
 	</mat-sidenav>
 
 	<mat-sidenav-content  [ngClass]="getContentClass()">
 
-		<mat-toolbar color="primary" *ngIf="showHeader()" [ngClass]="getHeaderClass()">
-			<button mat-button class="menu-button" (click)="sidenav.toggle()">
-				<mat-icon>{{isMenuOpen ? 'close' : 'menu'}}</mat-icon>
-			</button>
-			<p class="logo">{{logo}}</p>
-			<p class="wishlist">{{wishlist}}</p>
-		</mat-toolbar>
+		<app-header [page]="'home'" (onSidenavToggle)="sidenav.toggle()" ></app-header>
 
-		<router-outlet></router-outlet>
+		<!--<router-outlet></router-outlet>-->
 
 	</mat-sidenav-content>
 

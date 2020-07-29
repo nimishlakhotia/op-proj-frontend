@@ -2,3 +2,22 @@
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+* {
+	box-sizing: border-box !important;
+}
+
+.mat-toolbar-row, .mat-toolbar-single-row {
+    padding: 0px 0px !important;
+}
+
+.mat-button-focus-overlay {
+    background-color: transparent !important;
+}
+
+mat-sidenav {
+	padding: 0px 0px !important;
+
+	mix-blend-mode: normal !important;
+	backdrop-filter: blur(5px) !important;
+}
