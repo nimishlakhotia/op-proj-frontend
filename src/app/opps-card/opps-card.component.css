@@ -6,7 +6,35 @@
 @font-face {
 	font-family: poppins;
 	src: url("/assets/fonts/Poppins-Regular.ttf") format("truetype");
+
 }
+
+@font-face {
+	font-family: poppins-bold;
+	src: url("/assets/fonts/Poppins-Bold.ttf") format("truetype");
+
+}
+
+@font-face {
+	font-family: poppins-semibold;
+	src: url("/assets/fonts/Poppins-SemiBold.ttf") format("truetype");
+
+}
+
+@font-face {
+	font-family: poppins-black;
+	src: url("/assets/fonts/Poppins-Black.ttf") format("truetype");
+
+}
+
+@font-face {
+	font-family: poppins-medium;
+	src: url("/assets/fonts/Poppins-Medium.ttf") format("truetype");
+
+}
+
+
+
 
 .opps-card {
 	position: relative;
@@ -15,10 +43,14 @@
 
 	/* Card Shadow */
 
-	box-shadow: 0px 8px 12px rgba(18, 18, 18, 0.4);
-	border-radius: 15px;
+	box-shadow: 0px 8px 14px rgba(167, 167, 167, 0.4);
+	border-radius: 12px;
 
-	padding: 10px;
+	padding-left: 17px;
+/*	padding-right: 17px;
+	padding-bottom: 17px;*/
+	padding-top: 17px;
+
 	display: inline-block;
 	margin: 30px 30px;
 
@@ -30,15 +62,19 @@
 	height: 19px;
 
 	border-radius: 37px;
-	padding-left: 5px;
-	padding-right: 5px;
+	padding-left: 6px;
+	padding-right: 6px;
+	padding-bottom: 20px;
+	padding-top: 0px;
 
-	font-family: poppins;
+
+	font-family: poppins-black;
 	font-style: normal;
-	font-weight: 900;
+	font-weight: normal;
 	font-size: 14px;
 	line-height: 21px;
 	display: inline-block;
+	align-items: center;
 
 	color: white;
 
@@ -49,10 +85,10 @@
 .opps-name {
 	width: 204px;
 
-	font-family: poppins;
+	font-family: poppins-bold;
 	font-style: normal;
-	font-weight: bold;
-	font-size: 24px;
+	font-weight: normal;
+	font-size: 22px;
 	line-height: 105%;
 	word-wrap: break-word;
 	/* or 25px */
@@ -76,12 +112,12 @@
 
 .opps-location {
 	position: absolute;
-	bottom: 0px;
+	bottom: 5px;
 	width: 70%;
 
-	font-family: poppins;
+	font-family: poppins-semibold;
 	font-style: normal;
-	font-weight: 500;
+	font-weight: normal;
 	font-size: 16px;
 	line-height: 105%;
 	/* identical to box height, or 17px */
@@ -94,14 +130,14 @@
 
 .opps-duration {
 	position: absolute;
-	right: 10px;
-	bottom: 0px;
+	right: 17px;
+	bottom: 5px;
 
-	font-family: poppins;
+	font-family: poppins-medium;
 	font-style: normal;
-	font-weight: 500;
+	font-weight: normal;
 	font-size: 16px;
-	line-height: 105%;
+	line-height: 17px;
 	/* identical to box height, or 17px */
 
 	text-align: right;
