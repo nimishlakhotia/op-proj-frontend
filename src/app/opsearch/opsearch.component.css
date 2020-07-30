@@ -1,3 +1,21 @@
+:root{
+    /*--weblue: #21409a;*/
+    --b1: #D4E9E2;
+    --b2: #FAECDE;
+    --b3: #FBE9E5;
+    --b4: #D9E1E7;
+    --b5: #F1E4ED;
+    --b6: #DAEDF2;
+
+    --d1: #05905F;
+    --d2: #FF9D63;
+    --d3: #E76D50;
+    --d4: #225882;
+    --d5: #D67BBB;
+    --d6: #2BA9CA;
+
+}
+
 @font-face {
 	font-family: colombo;
 	src: url("/assets/fonts/Colombo.otf") format("opentype");
@@ -6,19 +24,50 @@
 @font-face {
 	font-family: poppins;
 	src: url("/assets/fonts/Poppins-Regular.ttf") format("truetype");
+
 }
+
+@font-face {
+	font-family: poppins-bold;
+	src: url("/assets/fonts/Poppins-Bold.ttf") format("truetype");
+
+}
+
+@font-face {
+	font-family: poppins-semibold;
+	src: url("/assets/fonts/Poppins-SemiBold.ttf") format("truetype");
+
+}
+
+@font-face {
+	font-family: poppins-black;
+	src: url("/assets/fonts/Poppins-Black.ttf") format("truetype");
+
+}
+
+@font-face {
+	font-family: poppins-medium;
+	src: url("/assets/fonts/Poppins-Medium.ttf") format("truetype");
+
+}
+
 
 .domain-container {
 	position: relative;
 }
 
 .domain {
-
+/*	position: absolute;
+	width: 157px;
+	height: 67px;
+	left: 561px;
+	top: 72px;
+*/
 	font-family: colombo;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 64px;
-	line-height: 105%;
+	line-height: 95%;
 	/* or 67px */
 
 	text-align: center;
@@ -28,10 +77,10 @@
 
 .search-container {
 	position: absolute;
-	width: 1190px;
+	width: 93%;
 	height: 40px;
-	left: 350px;
-	top: 152px;
+	left: 3.5%;
+	top: 21.1%;
 
 	border-radius: 62px;
 
@@ -40,17 +89,17 @@
 
 .search {
 	position: absolute;
-	left: 4.2%;
+	left: 4%;
 	top: 5%;
 	bottom: 1%;
 
-	width: 60%;
+	width: 80%;
 
 	border-style: none;
 
-	font-family: Poppins;
+	font-family: poppins-medium;
 	font-style: normal;
-	font-weight: 500;
+	font-weight: normal;
 	font-size: 24px;
 	line-height: 36px;
 	/* identical to box height */
@@ -70,7 +119,7 @@ input.search:focus {
 	position: absolute;
 	left: 1.26%;
 	right: 97.06%;
-	top: 15%;
+	top: 20%;
 	bottom: 25%;
 
 }
@@ -81,8 +130,8 @@ input.search:focus {
 	padding: 0px 0px;
 
 	position: absolute;
-	right: 1%;
-	top: 13%;
+	right: 0.5%;
+	top: 17.5%;
 }
 
 mat-button-toggle-group {
@@ -101,6 +150,12 @@ mat-button-toggle {
 	margin-left: 3px;
     margin-right:3px;
 
+    font-family: poppins ;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 21px;
+
 	display: flex;
 	align-items: center;
 	text-align: center;
@@ -109,48 +164,76 @@ mat-button-toggle {
 
 }
 
-mat-button-toggle.core {
-	background-color: #05905F !important;
+.core.mat-button-toggle {
+	background-color: #FFFFFF;
+	color: var(--d1);
 }
 
-.mat-button-toggle-label-content {
-    font-family: poppins;
+.information.mat-button-toggle {
+	background-color: #FFFFFF;
+	color: var(--d2);
+}
+
+.consulting.mat-button-toggle {
+	background-color: #FFFFFF;
+	color: var(--d3);
+
+}
+
+.entrepreneurship.mat-button-toggle {
+	background-color: #FFFFFF;
+	color: var(--d4);
+}
+
+.finance.mat-button-toggle {
+	background-color: #FFFFFF;
+	color: var(--d5);
+}
+
+.socdev.mat-button-toggle {
+	background-color: #FFFFFF;
+	color: var(--d6);
+}
+
+/*.mat-button-toggle-label-content {
+    font-family: poppins-semibold ;
 	font-style: normal;
-	font-weight: 600;
+	font-weight: normal;
 	font-size: 14px;
 	line-height: 21px;
-	/* identical to box height */
+	/* identical to box height
 
 	text-align: center;
 }
-
+*/
 .core.mat-button-toggle-checked {
-	background-color: #05905F !important;
+	background-color: var(--d1) !important;
 	color: #FFFFFF !important;
 }
 
 .information.mat-button-toggle-checked {
-	background-color: #FFA954 !important;
+	background-color: var(--d2) !important;
 	color: #FFFFFF !important;
 }
 
 .consulting.mat-button-toggle-checked {
-	background-color: #E76D50 !important;
+	background-color: var(--d3) !important;
 	color: #FFFFFF !important;
+
 }
 
 .entrepreneurship.mat-button-toggle-checked {
-	background-color: #225882 !important;
+	background-color: var(--d4) !important;
 	color: #FFFFFF !important;
 }
 
 .finance.mat-button-toggle-checked {
-	background-color: #9562A5 !important;
+	background-color: var(--d5) !important;
 	color: #FFFFFF !important;
 }
 
 .socdev.mat-button-toggle-checked {
-	background-color: #44A7C1 !important;
+	background-color: var(--d6) !important;
 	color: #FFFFFF !important;
 }
 
