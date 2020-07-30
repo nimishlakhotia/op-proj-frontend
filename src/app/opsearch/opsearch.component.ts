@@ -23,19 +23,21 @@ export class OpsearchComponent implements OnInit {
   ngOnInit(): void {
     this.opportunity_list.push(new Opps());
     this.opportunity_list[0].domain = 'Core';
-    this.opportunity_list[0].Deadline = '1 Week';
+    this.opportunity_list[0].Deadline = '1 week';
     this.opportunity_list[0].Location = 'Singapore';
     this.opportunity_list[0].Name_of_Program = 'STEP Youth Regional Affairs Dialogue';
     this.opportunity_list[0].Organiser = 'Commitee Organis';
     this.opportunity_list[0].Type = 'CONFERENCE';
   }
 
+
+
   getMainColor() {
     if(this.domain.toUpperCase() == 'CORE') {
       return '#05905F';
     }
     else if(this.domain.toUpperCase() == 'INFORMATION TECHNOLOGY') {
-      return '#FFA954';
+      return '#FF9D63';
     }
     else if(this.domain.toUpperCase() == 'CONSULTING') {
       return '#E76D50';
@@ -44,10 +46,10 @@ export class OpsearchComponent implements OnInit {
       return '#225882';
     }
     else if(this.domain.toUpperCase() == 'FINANCE') {
-      return '#9562A5';
+      return '#D67BBB';
     }
     else if(this.domain.toUpperCase() == 'SOCDEV & POLICY') {
-      return '#44A7C1';
+      return '#2BA9CA';
     }
   }
 
