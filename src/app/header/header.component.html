@@ -1,19 +1,19 @@
-<mat-toolbar color="{{mat_style}}" *ngIf="showHeader()">
+<mat-toolbar color="{{mat_style()}}" *ngIf="showHeader()">
 	<div class="header-container">
 		<div class="header-button-container">
-			<button mat-button disableRipple color="{{mat_style}}" class="menu-button" (click)="sidenavToggle()">
+			<button mat-button disableRipple color="{{mat_style()}}" class="menu-button" (click)="sidenavToggle()">
 				<mat-icon>{{'menu'}}</mat-icon>
 			</button>
 		</div>
 		<div class="logo-container">
-			<p [ngClass]="logo_class">{{logo}}</p>
+			<p [ngClass]="logo_class()">{{logo}}</p>
 		</div>
 		<div class="profile-container">
 			<div class="profile-image-container">
 				<span class="align-helper"></span><img class="reg-icon">
 			</div>
 			<div class="profile-wishlist-container">
-				<span class="align-helper"></span><p [ngClass]="wishlist_class">{{wishlist}}</p>
+				<span class="align-helper"></span><p [ngClass]="wishlist_class()">{{wishlist}}</p>
 			</div>
 		</div>
 	</div>

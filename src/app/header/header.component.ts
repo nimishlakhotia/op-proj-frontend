@@ -14,18 +14,31 @@ export class HeaderComponent implements OnInit {
 
   @Input('page') page_style;
 
-  mat_style = 'default';
-  
-  logo_class = {
-    'logo': true,
-    'mat-core': this.page_style == 'core',
-    'mat-default': this.page_style != 'core',
+  mat_style() { 
+    if(this.page_style == 'core')
+    {
+      return 'core';
+    }
+    else
+    {
+      return 'default';
+    }
   }
 
-  wishlist_class = {
-    'wishlist': true,
-    'mat-core': this.page_style == 'core',
-    'mat-default': this.page_style != 'core',
+  logo_class() {
+    return {
+      'logo': true,
+      'mat-core': this.page_style === 'core',
+      'mat-default': this.page_style !== 'core',
+    };
+  }
+
+  wishlist_class() {
+    return {
+      'wishlist': true,
+      'mat-core': this.page_style === 'core',
+      'mat-default': this.page_style !== 'core',
+    };
   }
 
 

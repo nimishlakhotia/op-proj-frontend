@@ -2,6 +2,14 @@
 	background-color: black;
 }
 
+.mat-core {
+	background-color: white;
+}
+
 .menu-button.mat-default, .logo.mat-default, .wishlist.mat-default {
 	color: white;
+}
+
+.menu-button.mat-core, .logo.mat-core, .wishlist.mat-core {
+	color: #05905F;
 }

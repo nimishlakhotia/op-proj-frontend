@@ -10,6 +10,12 @@ import { BackendService } from '../_services/backend.service';
 })
 export class OpsearchComponent implements OnInit {
 
+  search_types = [
+    { id: 1, name: "Opps" },
+    { id: 2, name: "People" }, 
+  ]
+  search_type = this.search_types[0].id.toString();
+
   public opportunity_list: Opps[] = [];
   public domain = 'Core';
   public searchstring;

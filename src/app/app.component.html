@@ -2,30 +2,15 @@
 
 <mat-sidenav-container>
 
-	<mat-sidenav #sidenav [(opened)]="isMenuOpen">
-		<div class="sidenav-button-container">
-			<button mat-button disableRipple class="menu-button" (click)="sidenav.toggle()">
-				<mat-icon>{{'close'}}</mat-icon>
-			</button>
-		</div>
-		<!--<button mat-button disableRipple class="menu-button" (click)="sidenav.toggle()">
-			<mat-icon>{{isMenuOpen ? 'close' : 'menu'}}</mat-icon>
-			<!--<div class="sidelinks">
-				<p class="corelink"><a routerLink="search/core">Core</a></p>
-				<p class="corelink"><a routerLink="search/information technology">IT</a></p>
-				<p class="corelink"><a routerLink="search/consulting">Consulting</a></p>
-				<p class="corelink"><a routerLink="search/entrepreneurship">Entrepreneurship</a></p>
-				<p class="corelink"><a routerLink="search/finance">Finance</a></p>
-				<p class="corelink"><a routerLink="search/socdev & policy">SocDev & Policy</a></p>
-			</div>
-		</button>-->
+	<mat-sidenav [ngClass]="sidenav_style()" #sidenav [(opened)]="isMenuOpen">
+		<app-sidenav [page]="getPageStyle()" (onSidenavToggle)="sidenav.toggle()"></app-sidenav>
 	</mat-sidenav>
 
 	<mat-sidenav-content  [ngClass]="getContentClass()">
 
-		<app-header [page]="'home'" (onSidenavToggle)="sidenav.toggle()" ></app-header>
+		<app-header [page]="getPageStyle()" (onSidenavToggle)="sidenav.toggle()" ></app-header>
 
-		<!--<router-outlet></router-outlet>-->
+		<router-outlet></router-outlet>
 
 	</mat-sidenav-content>
 

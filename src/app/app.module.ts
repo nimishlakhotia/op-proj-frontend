@@ -10,13 +10,13 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { HeaderComponent } from './header/header.component';
-import { NoheaderComponent } from './noheader/noheader.component';
 import { OpsearchComponent } from './opsearch/opsearch.component';
 import { JwtInterceptor } from './_helpers/jwt.interceptors';
 import { FormsModule } from '@angular/forms';
 import { ProfileComponent } from './profile/profile.component';
 import { OppsCardComponent } from './opps-card/opps-card.component';
 import { OppsWishlistComponent } from './opps-wishlist/opps-wishlist.component';
+import { SidenavComponent } from './sidenav/sidenav.component';
 
 @NgModule({
   declarations: [
@@ -25,11 +25,11 @@ import { OppsWishlistComponent } from './opps-wishlist/opps-wishlist.component';
     LoginComponent,
     RegisterComponent,
     HeaderComponent,
-    NoheaderComponent,
     OpsearchComponent,
     ProfileComponent,
     OppsCardComponent,
     OppsWishlistComponent,
+    SidenavComponent,
   ],
   imports: [
     BrowserModule,

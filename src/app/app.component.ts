@@ -5,14 +5,25 @@ import { ConstantPool } from '@angular/compiler';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
-  encapsulation: ViewEncapsulation.None,
+  styleUrls: ['./app.component.css',
+              './app-colors.component.css'],
 })
 export class AppComponent implements OnInit, OnDestroy{
 
   logo = 'LOGO';
   wishlist = 'WISHLIST'
   public isMenuOpen = false;
+
+  sidenav_style() { 
+    if(this.getPageStyle() == 'core')
+    {
+      return 'mat-core';
+    }
+    else
+    {
+      return 'mat-default';
+    }
+  }
 
   constructor(
     public router: Router
@@ -23,14 +34,6 @@ export class AppComponent implements OnInit, OnDestroy{
   }
   
   ngOnDestroy() {
-  }
-
-  showHeader() {
-    if(this.router.url.includes('login') || this.router.url.includes('register'))
-    {
-      return false;
-    }
-    return true;
   }
 
   getContentClass() {
@@ -84,5 +87,17 @@ export class AppComponent implements OnInit, OnDestroy{
     return {
       'black' : true,
     };
+  }
+
+  getPageStyle()
+  {
+    if(this.router.url.includes('search/core'))
+    {
+      return 'core';
+    }
+    else if(this.router.url.includes(''))
+    {
+      return 'home';
+    }
   }
 }

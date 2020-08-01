@@ -1,7 +1,25 @@
-<div class="domain-container">
-	<p class="domain" [style.color]="getMainColor()">{{domain}}</p>
+<div class="page-container">
+	<div class="domain-container">
+		<p class="domain" [style.color]="getMainColor()">{{domain}}</p>
+	</div>
+
+	<div class="search-container">
+		<div class="search-bar">
+			<mat-icon class="search-icon">search</mat-icon>
+			<input class="search-input" type="text" id="searchstring" name="searchstring" placeholder="Search" autocomplete="off" autocorrect="off" spellcheck="false">
+			<div class="search-type-toggle">
+				<mat-button-toggle-group name="search-type-toggle" [(value)] = "search_type">
+					<mat-button-toggle *ngFor="let type of search_types" disableRipple id="{{type.name}}" [ngClass]="getDomain()" value="{{type.id}}">{{type.name}}</mat-button-toggle>
+				</mat-button-toggle-group>
+			</div>
+		</div>
+	</div>
+
+	<div class="opps-list">
+		<app-opps-card *ngFor="let opportunity of opportunity_list" [opps]="opportunity"></app-opps-card>
+	</div>
 </div>
-<form #searchForm="ngForm">
+<!--<form #searchForm="ngForm">
 	<div class="search-container" [style.border-color]="getMainColor()">
 		<mat-icon class="search-icon" [style.color]="getMainColor()">search</mat-icon>
 		<input (keyup.enter)="search(searchForm)" class="search" type="text" id="searchstring" name="searchstring" placeholder="Search" [style.color]="getMainColor()" [ngModel]="searchstring" ngModel required>
@@ -16,4 +34,4 @@
 
 <div class="opps-list">
 	<app-opps-card *ngFor="let opportunity of opportunity_list" [opps]="opportunity"></app-opps-card>
-</div>
+</div>-->

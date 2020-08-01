@@ -19,5 +19,9 @@ mat-sidenav {
 	padding: 0px 0px !important;
 
 	mix-blend-mode: normal !important;
-	backdrop-filter: blur(5px) !important;
+	backdrop-filter: blur(20px) !important;
+}
+
+.mat-drawer-backdrop.mat-drawer-shown {
+	background-color: transparent !important;
 }
