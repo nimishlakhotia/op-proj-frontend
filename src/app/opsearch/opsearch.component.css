@@ -165,8 +165,8 @@ mat-button-toggle {
 	box-sizing: border-box;
 	border-radius: 39px;
 
-	margin-left: 3px;
-    margin-right:3px;
+	margin-left: 5px;
+    margin-right:0px;
 
     font-family: poppins ;
 	font-style: normal;
